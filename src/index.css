@@ -13,9 +13,9 @@ code {
     monospace;
 }
 
-.container {
+.containers {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 1140px;
 }
@@ -25,5 +25,34 @@ code {
   /* width: 50%; */
 }
 .todos {
+  width: 1140px;
   cursor: pointer;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+.listTodo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards {
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 5px 10px #888888;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.listInfo {
+  list-style: none;
+}
+
+.header {
+  font-family: fantasy;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
